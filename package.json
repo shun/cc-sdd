@@ -1,0 +1,25 @@
+{
+  "name": "cc-sdd-git",
+  "version": "0.0.0-git",
+  "private": true,
+  "description": "Git entrypoint package for running cc-sdd directly from GitHub via npx.",
+  "type": "module",
+  "workspaces": [
+    "tools/cc-sdd"
+  ],
+  "bin": {
+    "cc-sdd": "./bin/cc-sdd.js"
+  },
+  "files": [
+    "bin",
+    "tools/cc-sdd/dist",
+    "tools/cc-sdd/templates",
+    "tools/cc-sdd/package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace cc-sdd",
+    "prepare": "npm run build"
+  }
+}

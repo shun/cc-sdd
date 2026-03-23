@@ -39,6 +39,15 @@ npx cc-sdd@latest --claude --lang en ## Claude Code
 
 📖 **Next steps:** [All installation options](#%EF%B8%8F-advanced-installation) | [Command Reference](docs/guides/command-reference.md) | [Spec-Driven Guide](docs/guides/spec-driven.md)
 
+If you want to install directly from a GitHub branch before it is merged or
+published to npm, run the repository entrypoint instead:
+
+```bash
+npx github:shun/cc-sdd#dev --claude-agent
+npx github:shun/cc-sdd#dev --gemini
+npx github:shun/cc-sdd#dev --codex
+```
+
 ## 📋 See It In Action
 
 ### Example: Building a new Photo Albums Feature
