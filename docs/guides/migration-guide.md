@@ -32,7 +32,7 @@ npx cc-sdd@1.1.5 --claude-code   # legacy flag name (use --cursor / --gemini / e
 npx cc-sdd@1.1.5 --lang ja       # legacy i18n flags still work
 ```
 
-- You can keep editing `.claude/commands/*`, `.cursor/prompts/*`, `.codex/prompts/*` などのエージェント別フォルダを直接編集するスタイルで運用できます。
+- You can keep editing `.claude/commands/*`, `.cursor/prompts/*`, `.agents/skills/*` などのエージェント別フォルダを直接編集するスタイルで運用できます。
 - Agent-specific directory layouts stay exactly as they were in v1.
 - No new features will land here—future work targets `@latest` only.
 - The validate commands (`/kiro:validate-gap`, `-design`, `-impl`) do **not** exist in 1.1.5. If you rely on those gates, migrate to v2.

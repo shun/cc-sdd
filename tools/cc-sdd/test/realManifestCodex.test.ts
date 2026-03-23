@@ -50,7 +50,7 @@ describe('real codex manifest', () => {
     expect(code).toBe(0);
     const out = ctx.logs.join('\n');
     expect(out).toMatch(/Plan \(dry-run\)/);
-    expect(out).toContain('[templateDir] commands: templates/agents/codex/commands -> .codex/prompts');
+    expect(out).toContain('[templateDir] skills: templates/agents/codex/skills -> .agents/skills');
     expect(out).toContain('[templateFile] doc_main: templates/agents/codex/docs/AGENTS.md -> ./AGENTS.md');
     expect(out).toContain('[templateDir] settings_common: templates/shared/settings -> .kiro/settings');
   });
@@ -72,8 +72,9 @@ describe('real codex manifest', () => {
     const text = await readFile(doc, 'utf8');
     expect(text).toMatch(/# AI-DLC and Spec-Driven Development/);
 
-    const cmd = join(cwd, '.codex/prompts/kiro-spec-init.md');
+    const cmd = join(cwd, '.agents/skills/kiro-spec-init/SKILL.md');
     expect(await exists(cmd)).toBe(true);
+    expect(await readFile(cmd, 'utf8')).toMatch(/name: kiro-spec-init/);
 
     const settingsTemplate = join(cwd, '.kiro/settings/templates/specs/init.json');
     expect(await exists(settingsTemplate)).toBe(true);

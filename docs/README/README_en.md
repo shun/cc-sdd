@@ -27,7 +27,7 @@ Copy the appropriate directory based on your AI development platform:
 
 #### Platform-Specific Directories
 - **🤖 Claude Code**: `.claude/commands/` - Slash Commands definitions
-- **🧠 Codex CLI**: `.codex/prompts/` - OpenAI Codex prompt definitions
+- **🧠 Codex CLI**: `.agents/skills/` - OpenAI Codex skill definitions
 - **🔮 Cursor**: `.cursor/commands/` - Cursor command definitions  
 - **⚡ Gemini CLI**: `.gemini/commands/` - TOML configuration files
 - **🐙 GitHub Copilot**: `.github/prompts/` - Prompt collections for Copilot Chat
@@ -58,7 +58,7 @@ When you run commands, the following directories will be automatically created:
 ```
 your-project/
 ├── .claude/commands/kiro/     # Claude Code slash command definitions
-├── .codex/prompts/            # Codex CLI prompt definitions
+├── .agents/skills/            # Codex CLI skill definitions
 ├── .cursor/commands/kiro/     # Cursor command definitions
 ├── .gemini/commands/kiro/     # Gemini CLI TOML definitions
 ├── .github/prompts/           # GitHub Copilot prompt collections

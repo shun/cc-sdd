@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro spec init"
+  short_description: "Create a new spec skeleton."
+  default_prompt: "Use $kiro-spec-init to create a new spec from this feature idea."
+
+policy:
+  allow_implicit_invocation: true

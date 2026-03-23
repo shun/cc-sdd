@@ -27,14 +27,6 @@ export interface AgentDefinition {
   templateFallbacks?: Record<string, string>;
 }
 
-const codexCopyInstruction = String.raw`Move Codex Custom prompts to ~/.codex/prompts by running:
-    mkdir -p ~/.codex/prompts \
-      && cp -Ri ./.codex/prompts/. ~/.codex/prompts/ \
-      && printf '\n==== COPY PHASE DONE ====\n' \
-      && printf 'Remove original ./.codex/prompts ? [y/N]: ' \
-      && IFS= read -r a \
-      && case "$a" in [yY]) rm -rf ./.codex/prompts && echo 'Removed.' ;; *) echo 'Kept original.' ;; esac`;
-
 export const agentDefinitions = {
   'claude-code': {
     label: 'Claude Code',
@@ -81,21 +73,18 @@ export const agentDefinitions = {
   codex: {
     label: 'Codex CLI',
     description:
-      'Installs kiro prompts in `.codex/prompts/`, shared settings in `{{KIRO_DIR}}/settings/`, and an AGENTS.md quickstart.',
+      'Installs kiro skills in `.agents/skills/`, shared settings in `{{KIRO_DIR}}/settings/`, and an AGENTS.md quickstart.',
     aliasFlags: ['--codex', '--codex-cli'],
     recommendedModels: ['gpt-5.2-codex', 'gpt-5.2'],
     layout: {
-      commandsDir: '.codex/prompts',
-      agentDir: '.codex',
+      commandsDir: '.agents/skills',
+      agentDir: '.agents',
       docFile: 'AGENTS.md',
     },
     commands: {
-      spec: '`/prompts:kiro-spec-init <what-to-build>`',
-      steering: '`/prompts:kiro-steering`',
-      steeringCustom: '`/prompts:kiro-steering-custom <what-to-create-custom-steering-document>`',
-    },
-    completionGuide: {
-      prependSteps: [codexCopyInstruction],
+      spec: '`$kiro-spec-init <what-to-build>`',
+      steering: '`$kiro-steering`',
+      steeringCustom: '`$kiro-steering-custom <what-to-create-custom-steering-document>`',
     },
     manifestId: 'codex',
   },

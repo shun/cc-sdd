@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro gap analysis"
+  short_description: "Compare specs to existing code."
+  default_prompt: "Use $kiro-validate-gap to analyze the implementation gap for this spec."
+
+policy:
+  allow_implicit_invocation: true

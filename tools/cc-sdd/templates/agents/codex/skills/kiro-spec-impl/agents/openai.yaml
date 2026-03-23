@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro implement"
+  short_description: "Implement approved spec tasks."
+  default_prompt: "Use $kiro-spec-impl to implement the selected tasks for this spec."
+
+policy:
+  allow_implicit_invocation: false

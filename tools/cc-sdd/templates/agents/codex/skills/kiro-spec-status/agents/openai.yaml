@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro status"
+  short_description: "Show spec progress and next step."
+  default_prompt: "Use $kiro-spec-status to show the status of this spec."
+
+policy:
+  allow_implicit_invocation: true

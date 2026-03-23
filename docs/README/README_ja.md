@@ -30,7 +30,7 @@ Claude Code、Cursor、Gemini CLI、Codex CLIの4つのプラットフォーム�
 
 #### プラットフォーム別ディレクトリ
 - **🤖 Claude Code**: `.claude/commands/` - Claude Code用のSlash Commands定義
-- **🧠 Codex CLI**: `.codex/prompts/` - OpenAI Codex用のプロンプト定義
+- **🧠 Codex CLI**: `.agents/skills/` - OpenAI Codex用のスキル定義
 - **🔮 Cursor**: `.cursor/commands/` - Cursor用のコマンド定義  
 - **⚡ Gemini CLI**: `.gemini/commands/` - Gemini CLI用のTOMLファイル
 - **🐙 GitHub Copilot**: `.github/prompts/` - Copilot向けプロンプト定義
@@ -62,7 +62,7 @@ Claude Code、Cursor、Gemini CLI、Codex CLIの4つのプラットフォーム�
 あなたのプロジェクト/
 ├── プラットフォーム別ディレクトリ（使用するものをコピー）
 │   ├── .claude/commands/kiro/ # Claude Code用コマンド定義
-│   ├── .codex/prompts/       # Codex CLI用プロンプト定義
+│   ├── .agents/skills/       # Codex CLI用スキル定義
 │   ├── .cursor/commands/kiro/# Cursor用コマンド定義
 │   ├── .gemini/commands/kiro/# Gemini CLI用TOML設定
 │   ├── .github/prompts/      # GitHub Copilot用プロンプト定義
@@ -324,7 +324,7 @@ sequenceDiagram
 │   │   ├── spec-tasks.toml
 │   │   ├── spec-status.toml
 │   │   └── spec-impl.toml
-│   └── .codex/commands/           # Codex CLI用プロンプト
+│   └── .agents/skills/            # Codex CLI用スキル
 │       ├── spec-init.md
 │       ├── spec-requirements.md
 │       ├── spec-design.md
@@ -381,7 +381,7 @@ sequenceDiagram
    - Claude Code: `.claude/commands/`
    - Cursor: `.cursor/commands/`
    - Gemini CLI: `.gemini/commands/`
-   - Codex CLI: `.codex/commands/`
+   - Codex CLI: `.agents/skills/`
 2. コマンドファイルの命名規則を確認
 3. 各プラットフォームの最新バージョンを使用しているか確認
 

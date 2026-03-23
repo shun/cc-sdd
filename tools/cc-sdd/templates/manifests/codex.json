@@ -2,10 +2,10 @@
   "version": 1,
   "artifacts": [
     {
-      "id": "commands",
+      "id": "skills",
       "source": {
         "type": "templateDir",
-        "fromDir": "templates/agents/{{AGENT}}/commands",
+        "fromDir": "templates/agents/{{AGENT}}/skills",
         "toDir": "{{AGENT_COMMANDS_DIR}}"
       },
       "when": { "agent": "codex" }

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro implementation review"
+  short_description: "Validate implemented spec work."
+  default_prompt: "Use $kiro-validate-impl to validate the implementation for this spec."
+
+policy:
+  allow_implicit_invocation: true

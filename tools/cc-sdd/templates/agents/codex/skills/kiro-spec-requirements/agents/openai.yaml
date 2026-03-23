@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro requirements"
+  short_description: "Generate spec requirements."
+  default_prompt: "Use $kiro-spec-requirements to generate requirements for this spec."
+
+policy:
+  allow_implicit_invocation: true

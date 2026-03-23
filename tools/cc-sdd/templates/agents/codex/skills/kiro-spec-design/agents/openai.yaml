@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro design"
+  short_description: "Generate a technical design."
+  default_prompt: "Use $kiro-spec-design to create the design for this spec."
+
+policy:
+  allow_implicit_invocation: true

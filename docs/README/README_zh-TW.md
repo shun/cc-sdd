@@ -27,7 +27,7 @@
 
 #### 平台專用目錄
 - **🤖 Claude Code**：`.claude/commands/` - Slash Commands 定義
-- **🧠 Codex CLI**：`.codex/prompts/` - OpenAI Codex 提示定義
+- **🧠 Codex CLI**：`.agents/skills/` - OpenAI Codex 技能定義
 - **🔮 Cursor**：`.cursor/commands/` - Cursor 指令定義  
 - **⚡ Gemini CLI**：`.gemini/commands/` - TOML 配置檔案
 - **🐙 GitHub Copilot**：`.github/prompts/` - Copilot 提示集合
@@ -57,7 +57,7 @@
 ```
 your-project/
 ├── .claude/commands/kiro/   # Claude Code 指令定義
-├── .codex/prompts/          # Codex CLI 提示定義
+├── .agents/skills/          # Codex CLI 技能定義
 ├── .cursor/commands/kiro/   # Cursor 指令定義
 ├── .gemini/commands/kiro/   # Gemini CLI 設定
 ├── .github/prompts/         # GitHub Copilot 提示集合

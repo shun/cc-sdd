@@ -43,7 +43,7 @@ npx cc-sdd@latest --claude        # Claude Code (11 commands, en/ja/zh-TW/...)
 npx cc-sdd@latest --claude-agent --lang ja  # Claude Code Subagents (12 commands + 9 subagents)
 npx cc-sdd@latest --cursor --lang zh-TW     # Cursor IDE (choose any supported lang)
 npx cc-sdd@latest --gemini --lang es        # Gemini CLI
-npx cc-sdd@latest --codex --lang fr         # Codex CLI
+npx cc-sdd@latest --codex --lang fr         # Codex CLI (repo skills)
 npx cc-sdd@latest --copilot --lang pt       # GitHub Copilot
 npx cc-sdd@latest --qwen --lang de          # Qwen Code
 npx cc-sdd@latest --opencode --lang en      # OpenCode (11 commands)
@@ -128,7 +128,7 @@ npx cc-sdd@latest --windsurf --lang ja      # Windsurf IDE
 | **Claude Code Subagents** | ✅ Full | 12 commands + 9 subagents |
 | **Cursor IDE** | ✅ Full | 11 commands |
 | **Gemini CLI** | ✅ Full | 11 commands |
-| **Codex CLI** | ✅ Full | 11 prompts |
+| **Codex CLI** | ✅ Full | 11 skills |
 | **GitHub Copilot** | ✅ Full | 11 prompts |
 | **Qwen Code** | ✅ Full | 11 commands |
 | **Windsurf IDE** | ✅ Full | 11 workflows |
@@ -206,7 +206,7 @@ After installation, your project gets:
 ```
 project/
 ├── .claude/commands/kiro/    # 11 slash commands
-├── .codex/prompts/           # 11 prompt commands (Codex CLI)
+├── .agents/skills/           # 11 Codex skills (Codex CLI)
 ├── .github/prompts/          # 11 prompt commands (GitHub Copilot)
 ├── .windsurf/workflows/      # 11 workflow files (Windsurf IDE)
 ├── .kiro/settings/           # Shared rules & templates (variables resolved with {{KIRO_DIR}})

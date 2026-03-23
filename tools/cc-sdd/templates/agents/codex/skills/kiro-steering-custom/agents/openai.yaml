@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro custom steering"
+  short_description: "Create focused steering guidance."
+  default_prompt: "Use $kiro-steering-custom to create a custom steering file."
+
+policy:
+  allow_implicit_invocation: true

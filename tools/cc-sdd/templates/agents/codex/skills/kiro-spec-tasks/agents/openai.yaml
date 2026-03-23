@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro tasks"
+  short_description: "Plan implementation tasks."
+  default_prompt: "Use $kiro-spec-tasks to generate tasks for this spec."
+
+policy:
+  allow_implicit_invocation: true

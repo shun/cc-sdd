@@ -1,0 +1,7 @@
+interface:
+  display_name: "Kiro design review"
+  short_description: "Review design readiness."
+  default_prompt: "Use $kiro-validate-design to review this design before task generation."
+
+policy:
+  allow_implicit_invocation: true
